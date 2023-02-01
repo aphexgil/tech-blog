@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row mb-3">
+        <div class="col post-box">
+            <div class="post-box-header">
+                <div class="post-box-title">
+                    {{blogData.dataValues.title}}
+                </div>
+                <div class="post-box-sig">
+                    Posted by {{blogData.blog_user.dataValues.username}} on {{blogData.dataValues.dateString}} 
+                </div>
+            </div>
+            <div class="post-box-body">
+                {{blogData.dataValues.text}}
+            </div>
+        </div>
+    </div>
+
+    {{#each commentData as |comment|}}
+        <div class="row">
+            <div class="col comment-box">
+                <div class="comment-box-header">
+                    <div class="comment-box-sig">
+                        Posted by {{comment.dataValues.username}} on {{comment.dataValues.dateString}} 
+                    </div>
+                </div>
+                <div class="comment-box-body">
+                    {{comment.dataValues.text}}
+                </div>
+            </div>
+        </div>
+    {{/each}}
+
+</div>
+
+<div class="xl-lane">
+    <div class="new-comment-box" style="display: none;">
+
+        <div class="new-comment-box-header">
+            Write New Comment
+        </div>
+
+        <div class="new-comment-box-body">
+
+            <form class="form new-comment-form container-fluid" data-id={{blogData.dataValues.id}}>
+
+                <div class="row mb-2 justify-content-center">
+                    <textarea id="new-comment-text" type="text" class="col" rows="5"></textarea>
+                </div>
+
+                <div class="input-group row mb-1 justify-content-center">
+                    <button type="submit" class="col-3" id="new-post-btn">SUBMIT</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</div> 
+
+<form class="add-new-comment">
+    <button type="submit" class="col" id="new-comment-btn">+ NEW COMMENT</button>
+</form>
+
+<script src="/js/postComment.js"></script>

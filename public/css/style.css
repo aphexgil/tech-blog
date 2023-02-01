@@ -1,0 +1,148 @@
+html{
+    font-family: 'Source Code Pro', monospace;
+    background-color: #dce9d5;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+nav>a{
+    margin-right: 65px;
+    color: #dce9d5;
+    text-decoration: none;
+}
+
+
+header{
+    background-color: #201110;
+    height: 150px;
+    padding: 25px;
+}
+
+main{
+    background-color: #dce9d5;
+    padding: 20px;
+}
+
+.title-box{
+    background-color: #dce9d5;
+    color: #201110;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 45px;
+    width: fit-content;
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px 0px grey);
+}
+
+.post-box{
+    border-style: solid;
+    border-color: #201110;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.comment-box{
+    border-style: solid;
+    border-color: grey;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+
+.mid-lane{
+    width: 470px;
+    margin: 20px auto;
+}
+
+.lg-lane{
+    width: 500px;
+    margin: 20px auto;
+}
+
+
+.xl-lane{
+    width: 700px;
+    margin: 20px auto;
+}
+
+.login-box,
+.signup-box,
+.new-post-box,
+.new-comment-box,
+.edit-box{
+    border-style: solid;
+    border-color: #201110;
+    padding: 0px;
+}
+
+.post-box-header{
+    background-color: #201110;
+    color: #dce9d5;
+    padding: 5px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-box-header{
+    background-color: grey;
+    color: #dce9d5;
+    padding: 5px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-box-header,
+.signup-box-header,
+.new-post-box-header,
+.new-comment-box-header,
+.edit-box-header{
+    background-color: #201110;
+    color: #dce9d5;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.post-box-body,
+.login-box-body,
+.signup-box-body,
+.comment-box-body,
+.new-post-box-body,
+.new-comment-box-body,
+.edit-box-body{
+    padding: 10px;
+    color: #201110;
+}
+
+.post-box-sig,
+.comment-box-sig{
+    font-weight: 300;
+}
+
+.blog-anchor,
+.edit-anchor{
+    font-style: normal;
+    text-decoration: none;
+}
+
+#new-blog-btn{
+    width: 140px;
+    display: block;
+    margin: 70px auto;
+}
+
+#new-comment-btn{
+    width: 170px;
+    display: block;
+    margin: 70px auto;
+}

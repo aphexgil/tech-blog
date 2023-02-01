@@ -1,0 +1,29 @@
+<div class="container">
+
+    {{#each blogData as |blog|}}
+    <a href="/edit/{{blog.dataValues.id}}" class="edit-anchor">
+        <div class="row">
+            <div class="col post-box">
+
+                <div class="post-box-header">
+                    <div class="post-box-title">
+                        {{blog.dataValues.title}}
+                    </div>
+                    <div class="post-box-sig">
+                        Posted on {{blog.dataValues.dateString}} 
+                    </div>
+                </div>
+
+                {{!-- <div class="post-box-body">
+                    {{blog.dataValues.text}}
+                </div> --}}
+            </div>
+        </div>
+    </a>
+    {{/each}}
+
+</div>
+
+<form action="/new">
+    <button type="submit" class="col" id="new-blog-btn">+ NEW POST</button>
+</form>

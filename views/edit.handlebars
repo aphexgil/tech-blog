@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row mb-3">
+        <div class="col edit-box">
+            <div class="edit-box-header">
+                    Edit Post
+            </div>
+            <div class="edit-box-body">
+
+                <form class="form edit-form container-fluid" data-id={{blogData.dataValues.id}}>
+
+                    <div class="row mb-2">
+                        <label for="edit-title" class="col">Title</label>
+                    </div>
+                    <div class="row mb-2 justify-content-center">
+                        <input id="edit-title" type="text" class="col-11" value="{{blogData.dataValues.title}}">
+                    </div>
+
+                    <div class="row mb-2">
+                        <label for="edit-text" class="col">Text</label>
+                    </div>
+                    <div class="row mb-2 justify-content-center">
+                        <textarea id="edit-text" type="text" class="col-11" rows="5">{{blogData.dataValues.text}}</textarea>
+                    </div>
+
+                    <div class="input-group row mb-1 justify-content-center">
+                        <button type="submit" class="col-2" id="edit-btn">SUBMIT EDIT</button>
+                    </div>
+
+                    <div class="input-group row mb-1 justify-content-center">
+                        <button type="button" class="col-2" id="delete-btn">DELETE POST</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/putEdit.js"></script>
+<script src="/js/deleteBlog.js"></script>

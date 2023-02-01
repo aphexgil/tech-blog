@@ -1,0 +1,22 @@
+[
+  {
+    "title": "MVC",
+    "text": "Model–view–controller (MVC) is a software architectural pattern commonly used for developing user interfaces that divide the related program logic into three interconnected elements...",
+    "user_id": 1
+  },
+  {
+    "title": "MongoDB",
+    "text": "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas...",
+    "user_id": 2
+  },
+  {
+    "title": "MySQL",
+    "text": "MySQL is an open-source relational database management system (RDBMS).",
+    "user_id": 3
+  },
+  {
+    "title": "Dotenv",
+    "text": "Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.",
+    "user_id": 1
+  }
+]

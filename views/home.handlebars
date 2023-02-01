@@ -1,0 +1,23 @@
+<div class="container">
+
+    {{#each blogData as |blog|}}
+    <div class="row">
+        <a href="/blogs/{{blog.dataValues.id}}" class="blog-anchor">
+            <div class="col post-box">
+                <div class="post-box-header">
+                    <div class="post-box-title">
+                        {{blog.dataValues.title}}
+                    </div>
+                    <div class="post-box-sig">
+                        Posted by {{blog.blog_user.dataValues.username}} on {{blog.dataValues.dateString}} 
+                    </div>
+                </div>
+                <div class="post-box-body">
+                    {{blog.dataValues.text}}
+                </div>
+            </div>
+        </a>
+    </div>
+    {{/each}}
+
+</div>

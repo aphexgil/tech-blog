@@ -1,0 +1,27 @@
+[
+  {
+    "text": "The MVC model always confused me...",
+    "user_id": 2,
+    "blog_id": 1
+  },
+  {
+    "text": "Me too! That's why I started writing this post...",
+    "user_id": 1,
+    "blog_id": 1
+  },
+  {
+    "text": "I wish MongoDB would hire me...",
+    "user_id": 3,
+    "blog_id": 2
+  },
+  {
+    "text": "MySQL is the best, I love using Sequelize.",
+    "user_id": 1,
+    "blog_id": 3
+  },
+  {
+    "text": "Is this where you store your MySQL username and password?",
+    "user_id": 2,
+    "blog_id": 4
+  }
+]
